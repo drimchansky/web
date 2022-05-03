@@ -1,0 +1,41 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+body {
+    height: 100vh;
+}
+
+cta-modal {
+    --cta-modal-overlay-background-color: rgba(0, 0, 0, 0.5);
+    --cta-modal-overlay-padding-top: 20px;
+    --cta-modal-overlay-padding-left: 20px;
+    --cta-modal-overlay-padding-right: 20px;
+    --cta-modal-overlay-padding-bottom: 20px;
+    --cta-modal-overlay-z-index: 100000;
+
+    --cta-modal-dialog-background-color: #fff;
+    --cta-modal-dialog-border-radius: 5px;
+    --cta-modal-dialog-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    --cta-modal-dialog-padding-top: 20px;
+    --cta-modal-dialog-padding-left: 20px;
+    --cta-modal-dialog-padding-right: 20px;
+    --cta-modal-dialog-padding-bottom: 20px;
+    --cta-modal-dialog-width: 500px;
+
+    --cta-modal-close-color: #fff;
+    --cta-modal-close-background-color: #000;
+    --cta-modal-close-border-radius: 50%;
+    --cta-modal-close-box-shadow: 0 0 0 1px #fff;
+    --cta-modal-close-display: block;
+    --cta-modal-close-font-family: 'Arial', sans-serif;
+    --cta-modal-close-font-size: 23px;
+    --cta-modal-close-line-height: 26px;
+    --cta-modal-close-width: 26px;
+
+    --cta-modal-close-color-hover: #000;
+    --cta-modal-close-background-color-hover: #fff;
+    --cta-modal-close-box-shadow-hover: 0 0 0 1px #000;
+}
+
+cta-modal [slot='modal'] > *:last-child {
+    margin-bottom: 0;
+}

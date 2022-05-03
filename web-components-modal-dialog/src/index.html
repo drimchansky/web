@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <link rel="icon" href="./assets/favicon.ico" />
+        <link rel="stylesheet" href="./styles/index.css" />
+
+        <title>Demo</title>
+    </head>
+
+    <body>
+        <cta-modal id="ID_FOR_CTA_MODAL">
+            <div slot="button">
+                <p>
+                    <a class="cta-modal-toggle" href="#">Toggle modal (href="#")</a>
+                </p>
+
+                <p>
+                    <a class="cta-modal-toggle" role="button" tabindex="0">Toggle modal (role="button")</a>
+                </p>
+
+                <p>
+                    <button class="cta-modal-toggle" type="button">Toggle modal (button)</button>
+                </p>
+
+                <p>
+                    <input class="cta-modal-toggle" type="button" value="Toggle modal (input)" />
+                </p>
+
+                <p>
+                    <button class="cta-modal-toggle" type="button" disabled>Toggle modal (disabled button)</button>
+                </p>
+
+                <p>
+                    <input class="cta-modal-toggle" type="button" disabled value="Toggle modal (disabled input)" />
+                </p>
+            </div>
+
+            <div slot="modal">
+                <h2>Hello world</h2>
+
+                <p>
+                    <label for="ID_FOR_INPUT_NAME">Name</label>
+                    <input type="text" id="ID_FOR_INPUT_NAME" />
+                </p>
+
+                <p>
+                    <label for="ID_FOR_INPUT_EMAIL">Email</label>
+                    <input type="email" id="ID_FOR_INPUT_EMAIL" />
+                </p>
+
+                <p>
+                    <button type="button">Submit</button>
+                    &nbsp;
+                    <a class="cta-modal-toggle" role="button" tabindex="0">Cancel</a>
+                </p>
+            </div>
+        </cta-modal>
+
+        <script type="module" src="./scripts/index.ts"></script>
+    </body>
+</html>
