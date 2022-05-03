@@ -1,1 +1,1 @@
-import './cta.modal/index'
+import './cta.modal'

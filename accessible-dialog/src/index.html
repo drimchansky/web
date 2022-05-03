@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <link rel="icon" href="./assets/favicon.ico" />
+        <link rel="stylesheet" href="./styles/index.css" />
+
+        <title>Demo</title>
+    </head>
+
+    <body>
+        <div class="my-dialog" id="my-dialog" hidden aria-labelledby="my-dialog-title">
+            <div class="my-dialog__overlay" data-dialog-hide></div>
+            <div class="my-dialog__content">
+                <h1 class="my-dialog__header" id="my-dialog-title">My dialog title</h1>
+                <p>This will be a dialog.</p>
+                <button type="button" data-dialog-hide>Close</button>
+            </div>
+        </div>
+
+        <button id="toggle-dialog" type="button">Show dialog</button>
+
+        <script type="module" src="./scripts/index.ts"></script>
+    </body>
+</html>

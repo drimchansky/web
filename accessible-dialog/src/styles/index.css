@@ -1,0 +1,35 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+body {
+    height: 100vh;
+}
+
+.my-dialog {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-dialog[hidden] {
+    visibility: hidden;
+}
+
+.my-dialog__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.my-dialog__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
