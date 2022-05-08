@@ -1,0 +1,9 @@
+{
+  "name": "css-cascade-layers",
+  "private": "true",
+  "devDependencies": {
+    "basscss": "^8.0.2",
+    "bootstrap": "^5.1.3",
+    "normalize.css": "^8.0.1"
+  }
+}

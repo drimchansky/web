@@ -1,0 +1,46 @@
+@layer reset, bootstrap, components, utilities;
+
+/* 
+final priority order (ASC):
+- reset.normalize
+- reset
+- bootstrap
+- components
+- utilities.basscss
+- utilities
+*/
+
+@import url('./components/button.css') layer(components);
+
+@import url('../node_modules/normalize.css/normalize.css') layer(reset.normalize);
+@import url('../node_modules/basscss/css/basscss.min.css') layer(utilities.basscss);
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css') layer(bootstrap);
+
+@layer reset {
+    :is(ol, ul)[role='list'] {
+      list-style: none;
+      padding-inline-start: 0;
+    }
+}
+
+@layer utilities {
+  /* from https://kittygiraudel.com/snippets/sr-only-class/ */
+  /* but with !important removed from the properties */
+  .sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+}
+
+h1 {
+  color: rebeccapurple;
+}
